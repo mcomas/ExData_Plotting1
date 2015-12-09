@@ -12,7 +12,7 @@ d = subset(data, Date == '1/2/2007' | Date == '2/2/2007')
 
 Sys.setlocale("LC_TIME", "en_US.UTF-8")
 
-png(filename = 'plot3.png', width = 480, height = 480)
+png(filename = 'plot3.png', width = 480, height = 480, bg = "transparent")
 
 plot(d$datetime, d$Sub_metering_1, type='l', xlab = '', ylab = 'Energy sub metering')
 lines(d$datetime, d$Sub_metering_2, col=2)

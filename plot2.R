@@ -12,8 +12,9 @@ d = subset(data, Date == '1/2/2007' | Date == '2/2/2007')
 
 Sys.setlocale("LC_TIME", "en_US.UTF-8")
 
-png(filename = 'plot2.png', width = 480, height = 480)
+png(filename = 'plot2.png', width = 480, height = 480, bg = "transparent")
 
 plot(d$datetime, d$Global_active_power, type='l', xlab = '', ylab = 'Global Active Power (kilowatts)')
 
 dev.off()
+
