@@ -12,7 +12,7 @@ d = subset(data, Date == '1/2/2007' | Date == '2/2/2007')
 
 Sys.setlocale("LC_TIME", "en_US.UTF-8")
 
-png(filename = 'plot4.png', width = 480, height = 480, bg = "transparent")
+png(filename = 'plot4.png', width = 480, height = 480)
 
 par(mfrow=c(2,2))
 

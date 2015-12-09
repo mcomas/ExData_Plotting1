@@ -10,7 +10,7 @@ data$datetime = strptime(paste(data$Date, data$Time), format="%d/%m/%Y %H:%M:%S"
 
 d = subset(data, Date == '1/2/2007' | Date == '2/2/2007')
 
-png(filename = 'plot1.png', width = 480, height = 480, bg = "transparent")
+png(filename = 'plot1.png', width = 480, height = 480)
 
 hist(d$Global_active_power, col='red', xlab = 'Global Active Power (kilowatts)', main = 'Global Active Power')
 
